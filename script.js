@@ -24,31 +24,23 @@ while (i < 3){
 
 //Задание 3
  
-zad3 = function () { 
- 
-    let a = 0; 
+    let c = 0; 
  
     while (true) { 
-        a = +prompt('Введите число, больше 10'); 
-        if (a < 10) break; 
-    } 
-} 
+        c = +prompt('Введите число, больше 10'); 
+        if (c < 10) break; 
+    }  
  
-// 4 задание 
+// 4 задание  
  
-zad4 = function () { 
- 
-    function min(a, b) { 
-        if (a < b) return a; 
-        return b; 
+    function min(e, d) { 
+        if (e < d) return e; 
+        return d; 
     } 
  
-    alert(min(+prompt('Введите число a'), +prompt('Введите число b'))); 
-} 
+    alert(min(+prompt('Введите число e'), +prompt('Введите число d'))); 
  
 // 5 задание 
- 
-zad5 = function () { 
  
     let ask = (question, yes, no) => { 
         if (confirm(question)) yes() 
@@ -60,18 +52,12 @@ zad5 = function () {
         () => alert("Вы отменили выполнение.") 
     ); 
  
-} 
- 
 // 6 задание 
- 
-zad6 = function () { 
  
     ageUser = +prompt('Введите ваш возраст'); 
  
     function checkAge(age) { 
-        return age > 18 || confirm('Родители разрешили?'); 
+        return age >= 18 || confirm('Родители разрешили?'); 
     } 
  
-    alert(checkAge(ageUser)); 
- 
-}
+    alert(checkAge(ageUser));
